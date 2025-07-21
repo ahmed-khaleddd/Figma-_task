@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hazooom</title>
+    <link rel="stylesheet" href="figma1.css">
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    background-color: #110f0f;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-style: thin;
+    font-weight: 100;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    width: 10%;
+}
+.logo img{
+    width: 100%;
+}
+.nav-content{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.nav-content ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+} 
+
+
+.nav-content .icons:last-child::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #DEC700;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+.home{
+    background-color: #141212;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    
+    
+}
+.item1{
+    align-self: flex-start;
+    width: 25%;
+}
+
+.item1 h2 span{
+    color: rgba(255, 255, 255, 0.5);
+}
+.item1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-style: thin;
+    font-weight: 100;
+}
+.item1 h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.home-img{
+    width: 40%;
+    align-self: center;
+}
+.home-img img{
+    width: 100%;    
+}
+.sticky{
+    width: 30px;
+    height: 130px;
+    border-radius: 25px 0 0 25px;
+    background-color: #DEC700;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sticky-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sticky-icons li i {
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.sticky-icons li i:hover {
+    transform: scale(1.2);
+}
+.item2{
+    align-self: center;
+    width: 30%;
+}
+.item2 span{
+    font-family: "Sacramento", cursive;
+    font-size: 16px;
+    color: #DEC700;
+    font-weight: 400;
+}
+.item2 h1{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.item2 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-style: thin;
+    font-weight: 100;
+    letter-spacing: 0%;
+}
+    </style>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images.png" alt="logo">
+        </div>
+        <div class="nav-content">
+            <div class="nav-links">
+                <ul>
+                    <li>Favorite Fruits</li>
+                    <li>Fruit Shoop</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            
+    </nav>
+
+    <section class="home">
+        <div class="item1">
+            <h2><span>01</span>/02</h2>
+            <h2>Mix Fruits</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+        </div>
+        <div class="home-img">
+            <img src="pngwing 1 (1).png" alt="Fruits">
+
+        </div>
+        <div class="item2">
+            <h1>Fruit<span> Fruit Mania</span> Delivery</h1>
+            
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua 
+                dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                Exercitation veniam consequat sunt nostrud amet.
+            </p>
+        </div>
+        <div class="sticky">
+            <ul class="sticky-icons">
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <img src="Vector (1).png" >
+                <li><i class="fa-brands fa-square-facebook"></i></li>
+                <img src="Vector (2).png">
+                <li><i class="fa-brands fa-square-twitter"></i></li>
+                <img src="fa_twitter-square.png">
+            </ul>
+        </div>
+        
+    </section>
+</body>
+</html>
